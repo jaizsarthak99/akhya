@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Gift } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import peacockPattern from '@/assets/peacock-pattern.jpg';
 
 export const HeroSection = () => {
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setVisible(true);
@@ -57,6 +61,16 @@ export const HeroSection = () => {
           <div className="text-4xl md:text-5xl animate-float" style={{ animationDelay: '0.6s' }}>
             ✨
           </div>
+
+          {/* Celebration button */}
+          <Button
+            onClick={() => navigate('/celebration')}
+            size="lg"
+            className="mt-8 bg-gradient-to-r from-primary via-secondary to-accent text-white border-0 hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(139,92,246,0.3)]"
+          >
+            <Gift className="mr-2 h-5 w-5" />
+            Open Your Gift
+          </Button>
         </div>
       </div>
     </section>
