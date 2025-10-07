@@ -1,4 +1,4 @@
-import lotusMandala from '@/assets/lotus-mandala.jpg';
+import krishnaRadhaEyes from '@/assets/krishna-radha-eyes.jpg';
 
 export const SacredArtSection = () => {
   return (
@@ -21,26 +21,20 @@ export const SacredArtSection = () => {
           <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl opacity-50 group-hover:opacity-75 blur transition duration-500" />
           
           <div className="relative bg-card rounded-2xl p-6 md:p-8 border border-border/50">
-            {/* Placeholder for user's Krishna & Radha eyes drawing */}
-            <div className="aspect-square md:aspect-video bg-gradient-to-br from-muted/30 to-transparent rounded-xl flex items-center justify-center overflow-hidden">
+            {/* Krishna & Radha eyes drawing */}
+            <div className="rounded-xl overflow-hidden">
               <img 
-                src={lotusMandala} 
-                alt="Sacred lotus mandala"
-                className="w-full h-full object-cover opacity-40"
+                src={krishnaRadhaEyes} 
+                alt="Krishna and Radha's divine eyes - hand drawn artwork"
+                className="w-full h-auto object-contain"
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-                <div className="text-6xl md:text-8xl mb-4 animate-glow">👁️</div>
-                <p className="font-cinzel text-lg md:text-xl text-muted-foreground">
-                  Your Krishna & Radha Eyes
-                </p>
-                <p className="font-inter text-sm text-muted-foreground/60 mt-2">
-                  (Add your drawing here)
-                </p>
-              </div>
             </div>
 
             {/* Caption */}
-            <div className="mt-6 text-center">
+            <div className="mt-6 text-center space-y-2">
+              <p className="font-cinzel text-base md:text-lg text-foreground">
+                Eyes of Divine Love
+              </p>
               <p className="font-inter text-sm md:text-base text-muted-foreground italic">
                 "The eyes that see the divine in all things"
               </p>
