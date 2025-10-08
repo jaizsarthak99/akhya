@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Gift } from 'lucide-react';
+import { Gift, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import peacockPattern from '@/assets/peacock-pattern.jpg';
 
@@ -62,15 +62,26 @@ export const HeroSection = () => {
             ✨
           </div>
 
-          {/* Celebration button */}
-          <Button
-            onClick={() => navigate('/celebration')}
-            size="lg"
-            className="mt-8 bg-gradient-to-r from-primary via-secondary to-accent text-white border-0 hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(139,92,246,0.3)]"
-          >
-            <Gift className="mr-2 h-5 w-5" />
-            Open Your Gift
-          </Button>
+          {/* Action buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mt-8">
+            <Button
+              onClick={() => navigate('/celebration')}
+              size="lg"
+              className="bg-gradient-to-r from-primary via-secondary to-accent text-white border-0 hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(139,92,246,0.3)]"
+            >
+              <Gift className="mr-2 h-5 w-5" />
+              Open Your Gift
+            </Button>
+            
+            <Button
+              onClick={() => navigate('/letter')}
+              size="lg"
+              className="bg-gradient-to-r from-accent via-primary to-secondary text-white border-0 hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(234,179,8,0.3)]"
+            >
+              <Mail className="mr-2 h-5 w-5" />
+              A Letter For You
+            </Button>
+          </div>
         </div>
       </div>
     </section>
