@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Gift, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { PeacockFeatherAnimation } from '@/components/PeacockFeatherAnimation';
 import peacockPattern from '@/assets/peacock-pattern.jpg';
 
 export const HeroSection = () => {
@@ -14,21 +15,14 @@ export const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with peacock pattern */}
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url(${peacockPattern})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
-      
       {/* Gradient overlay */}
       <div className="absolute inset-0 gradient-divine" />
       
       {/* Radial glow effect */}
       <div className="absolute inset-0 gradient-glow" />
+      
+      {/* Peacock feather animation */}
+      <PeacockFeatherAnimation />
 
       {/* Content */}
       <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
