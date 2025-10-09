@@ -18,9 +18,9 @@ export const SacredArtSection = () => {
 
         {/* Art card with placeholder for user's drawing */}
         <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl opacity-50 group-hover:opacity-75 blur transition duration-500" />
+          <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-2xl opacity-20 group-hover:opacity-30 blur transition duration-500" />
           
-          <div className="relative bg-card rounded-2xl p-6 md:p-8 border border-border/50">
+          <div className="relative bg-card rounded-2xl p-6 md:p-8 border border-border shadow-lg">
             {/* Krishna & Radha eyes drawing */}
             <div className="rounded-xl overflow-hidden">
               <img 

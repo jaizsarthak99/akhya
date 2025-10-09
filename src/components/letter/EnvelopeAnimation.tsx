@@ -25,10 +25,10 @@ export const EnvelopeAnimation = ({ onComplete }: EnvelopeAnimationProps) => {
       {/* Envelope body */}
       <div className="relative w-full aspect-[3/2]">
         {/* Envelope back */}
-        <div className="absolute inset-0 bg-gradient-to-br from-accent via-primary to-secondary rounded-lg shadow-2xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-lg shadow-2xl" />
         
         {/* Decorative seal */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-accent/30 backdrop-blur-sm border-2 border-accent/50 flex items-center justify-center animate-glow">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-primary/20 backdrop-blur-sm border-2 border-primary flex items-center justify-center animate-glow">
           <span className="text-2xl">✨</span>
         </div>
 
@@ -38,7 +38,7 @@ export const EnvelopeAnimation = ({ onComplete }: EnvelopeAnimationProps) => {
             stage === 'opening' || stage === 'complete' ? 'rotate-x-180' : 'rotate-x-0'
           }`}
           style={{
-            background: 'linear-gradient(to bottom, hsl(var(--accent)), hsl(var(--primary)))',
+            background: 'linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--accent)))',
             clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
             transformStyle: 'preserve-3d',
             transform: stage === 'opening' || stage === 'complete' ? 'rotateX(-180deg)' : 'rotateX(0deg)',
@@ -47,7 +47,7 @@ export const EnvelopeAnimation = ({ onComplete }: EnvelopeAnimationProps) => {
 
         {/* Letter paper peeking out */}
         <div 
-          className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] h-[120%] bg-background/95 rounded-t-lg shadow-xl transition-all duration-2000 ${
+          className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] h-[120%] bg-card rounded-t-lg shadow-xl transition-all duration-2000 ${
             stage === 'opening' ? 'translate-y-0' : 'translate-y-full'
           } ${stage === 'complete' ? '-translate-y-4 scale-110' : ''}`}
         >

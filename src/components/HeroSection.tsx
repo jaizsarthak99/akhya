@@ -16,7 +16,7 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with peacock pattern */}
       <div 
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `url(${peacockPattern})`,
           backgroundSize: 'cover',
@@ -25,7 +25,7 @@ export const HeroSection = () => {
       />
       
       {/* Gradient overlay */}
-      <div className="absolute inset-0 gradient-divine opacity-80" />
+      <div className="absolute inset-0 gradient-divine" />
       
       {/* Radial glow effect */}
       <div className="absolute inset-0 gradient-glow" />
@@ -67,7 +67,7 @@ export const HeroSection = () => {
             <Button
               onClick={() => navigate('/celebration')}
               size="lg"
-              className="bg-gradient-to-r from-primary via-secondary to-accent text-white border-0 hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(139,92,246,0.3)]"
+              className="bg-gradient-to-r from-primary to-accent text-primary-foreground border-0 hover:brightness-110 transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               <Gift className="mr-2 h-5 w-5" />
               Open Your Gift
@@ -76,7 +76,7 @@ export const HeroSection = () => {
             <Button
               onClick={() => navigate('/letter')}
               size="lg"
-              className="bg-gradient-to-r from-accent via-primary to-secondary text-white border-0 hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(234,179,8,0.3)]"
+              className="bg-gradient-to-r from-secondary to-primary text-primary-foreground border-0 hover:brightness-110 transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               <Mail className="mr-2 h-5 w-5" />
               A Letter For You

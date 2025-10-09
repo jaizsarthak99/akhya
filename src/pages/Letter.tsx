@@ -31,7 +31,7 @@ const Letter = () => {
       <div className="relative z-10 container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-screen">
         {/* Title */}
         <h1 className="font-cinzel text-2xl md:text-4xl font-bold text-center mb-12 animate-fade-in">
-          <span className="bg-gradient-to-r from-accent via-primary to-secondary bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
             A Special Message
           </span>
         </h1>

@@ -35,8 +35,8 @@ export const PhotoCarousel = () => {
   return (
     <div className="relative w-full max-w-3xl mx-auto animate-fade-in">
       {/* Carousel container with elegant frame */}
-      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-1">
-        <div className="bg-background/80 backdrop-blur-sm rounded-3xl overflow-hidden">
+      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 p-1">
+        <div className="bg-card backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg">
           <Carousel
             setApi={setApi}
             opts={{

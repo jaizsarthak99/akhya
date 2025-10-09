@@ -52,7 +52,7 @@ export const FloatingParticles = () => {
           particle.y,
           particle.size * 3
         );
-        gradient.addColorStop(0, `hsla(235, 75%, 65%, ${particle.opacity})`);
+        gradient.addColorStop(0, `hsla(210, 85%, 65%, ${particle.opacity * 0.6})`);
         gradient.addColorStop(1, 'transparent');
 
         ctx.fillStyle = gradient;

@@ -4,9 +4,9 @@ export const MessageSection = () => {
       <div className="max-w-3xl mx-auto">
         {/* Quote card */}
         <div className="relative group mb-16">
-          <div className="absolute -inset-1 bg-gradient-to-r from-accent via-primary to-secondary rounded-2xl opacity-30 group-hover:opacity-50 blur-xl transition duration-500" />
+          <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-2xl opacity-20 group-hover:opacity-30 blur-xl transition duration-500" />
           
-          <div className="relative bg-card/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/30">
+          <div className="relative bg-card backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border shadow-lg">
             <div className="text-center space-y-6">
               {/* Opening quote */}
               <div className="text-accent text-4xl md:text-5xl font-cinzel">"</div>
