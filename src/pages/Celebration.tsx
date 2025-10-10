@@ -1,7 +1,7 @@
 import { FloatingParticles } from '@/components/FloatingParticles';
 import { CelebrationScene } from '@/components/celebration/CelebrationScene';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, MessageCircleHeart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Celebration = () => {
@@ -39,6 +39,18 @@ const Celebration = () => {
         <p className="font-inter text-center text-muted-foreground mt-12 max-w-md animate-fade-in" style={{ animationDelay: '1s' }}>
           May your day be filled with sweetness and beauty ✨
         </p>
+
+        {/* Gita Chat Button */}
+        <div className="mt-8 animate-fade-in" style={{ animationDelay: '1.5s' }}>
+          <Button
+            onClick={() => navigate('/gita-chat')}
+            size="lg"
+            className="bg-gradient-to-r from-secondary to-primary text-primary-foreground border-0 hover:brightness-110 transition-all shadow-lg hover:shadow-xl hover:scale-105"
+          >
+            <MessageCircleHeart className="mr-2 h-5 w-5" />
+            Seek Gita Wisdom
+          </Button>
+        </div>
       </div>
     </main>
   );
