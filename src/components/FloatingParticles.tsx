@@ -26,16 +26,16 @@ export const FloatingParticles = () => {
     window.addEventListener('resize', updateCanvasSize);
 
     const particles: Particle[] = [];
-    const particleCount = 30;
+    const particleCount = 20;
 
     // Initialize particles
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        size: Math.random() * 3 + 1,
-        speedY: Math.random() * 0.5 + 0.2,
-        opacity: Math.random() * 0.5 + 0.3,
+        size: Math.random() * 2 + 0.5,
+        speedY: Math.random() * 0.3 + 0.1,
+        opacity: Math.random() * 0.3 + 0.15,
       });
     }
 
@@ -50,17 +50,18 @@ export const FloatingParticles = () => {
           0,
           particle.x,
           particle.y,
-          particle.size * 3
+          particle.size * 4
         );
-        gradient.addColorStop(0, `hsla(210, 85%, 65%, ${particle.opacity * 0.6})`);
+        gradient.addColorStop(0, `hsla(210, 80%, 60%, ${particle.opacity * 0.4})`);
+        gradient.addColorStop(0.5, `hsla(210, 85%, 65%, ${particle.opacity * 0.2})`);
         gradient.addColorStop(1, 'transparent');
 
         ctx.fillStyle = gradient;
         ctx.beginPath();
-        ctx.arc(particle.x, particle.y, particle.size * 3, 0, Math.PI * 2);
+        ctx.arc(particle.x, particle.y, particle.size * 4, 0, Math.PI * 2);
         ctx.fill();
 
-        // Update position
+        // Update position with smoother movement
         particle.y -= particle.speedY;
 
         // Reset particle when it goes off screen
