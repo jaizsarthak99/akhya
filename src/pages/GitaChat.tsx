@@ -22,10 +22,10 @@ const GitaChat = () => {
           </Button>
           <div>
             <h1 className="text-xl font-cinzel font-semibold text-foreground">
-              Gita Wisdom Guide
+              Akhya's Wisdom Corner
             </h1>
             <p className="text-sm text-muted-foreground">
-              Guidance inspired by the Bhagavad Gita
+              Personal guidance inspired by sacred wisdom, just for you ✨
             </p>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const ChatInterface = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: 'Namaste 🙏 I am here to offer guidance inspired by the wisdom of the Bhagavad Gita. Share what weighs on your heart, and together we shall seek clarity and peace.',
+      content: 'Namaste, dear Akhya 🙏✨\n\nI am here as your personal guide, drawing from the timeless wisdom of the Bhagavad Gita to help you navigate life\'s journey. Whether you seek clarity in confusion, peace in turmoil, or purpose in uncertainty, share what\'s in your heart, and together we shall find the way forward.\n\nWhat brings you here today, Akhya?',
     },
   ]);
   const [input, setInput] = useState('');
@@ -163,6 +163,13 @@ export const ChatInterface = () => {
 
   return (
     <div className="flex flex-col h-[calc(100vh-180px)] bg-card rounded-2xl border border-border shadow-lg">
+      {/* Decorative Header */}
+      <div className="px-6 py-3 border-b border-border bg-gradient-to-r from-primary/5 to-accent/5">
+        <p className="text-xs text-center text-muted-foreground font-cinzel">
+          Made specially for Akhya ✨
+        </p>
+      </div>
+      
       {/* Messages */}
       <ScrollArea ref={scrollRef} className="flex-1 p-6">
         <div className="space-y-6">
@@ -199,7 +206,7 @@ export const ChatInterface = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Share your thoughts or ask for guidance..."
+            placeholder="What's on your mind today, Akhya?"
             className="min-h-[60px] max-h-[120px] resize-none border-border focus:ring-primary"
             disabled={isLoading}
           />
