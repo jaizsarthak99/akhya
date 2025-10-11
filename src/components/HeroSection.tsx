@@ -16,17 +16,17 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with elegant peacock feather pattern */}
       <div 
-        className="absolute inset-0 opacity-[0.15]"
+        className="absolute inset-0 opacity-[0.35]"
         style={{
           backgroundImage: `url(${peacockPattern})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'brightness(1.2) contrast(0.9)',
+          filter: 'brightness(1.3) contrast(0.85)',
         }}
       />
       
       {/* Soft vignette overlay for elegance */}
-      <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/20 to-background/60" />
+      <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/10 to-background/40" />
       
       {/* Gradient overlay */}
       <div className="absolute inset-0 gradient-divine" />
