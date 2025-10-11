@@ -50,7 +50,8 @@ export const MessageSection = () => {
             </p>
             <p>
               May your path be illuminated with divine light, your heart filled with bhakti, 
-              and your life blessed with purpose and joy.
+              and your life blessed with purpose and joy. Wishing our beloved Laddo Gopal a very Happy Birthday! 
+              May His divine grace fill every moment with sweetness, love, and eternal bliss.
             </p>
             <p className="text-primary font-medium pt-2">
               Jai Shri Krishna! 🙏
