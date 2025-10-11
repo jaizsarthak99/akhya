@@ -14,15 +14,19 @@ export const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with peacock pattern */}
+      {/* Background with elegant peacock feather pattern */}
       <div 
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0 opacity-[0.15]"
         style={{
           backgroundImage: `url(${peacockPattern})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          filter: 'brightness(1.2) contrast(0.9)',
         }}
       />
+      
+      {/* Soft vignette overlay for elegance */}
+      <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/20 to-background/60" />
       
       {/* Gradient overlay */}
       <div className="absolute inset-0 gradient-divine" />
