@@ -8,13 +8,16 @@ export const LetterContent = ({ visible }: LetterContentProps) => {
   const [revealedLines, setRevealedLines] = useState(0);
 
   const lines = [
-    { type: 'greeting', text: 'Dearest Akhya,' },
-    { type: 'body', text: 'On this special day, I wanted to take a moment to celebrate the wonderful person you are. Your presence brings light and joy to everyone around you.' },
-    { type: 'body', text: 'Like the eternal love of Radha and Krishna, may your life be filled with divine blessings, endless happiness, and beautiful moments that last forever.' },
-    { type: 'body', text: 'As you step into another year of your journey, may you continue to shine brightly and inspire others with your kindness and grace.' },
-    { type: 'body', text: 'Wishing you all the love, laughter, and blessings that your heart can hold.' },
-    { type: 'closing', text: 'With all my love,' },
-    { type: 'signature', text: '✨' },
+    { type: 'greeting', text: 'Happy Birthday, Your Honour.' },
+    { type: 'body', text: 'Before you roll your eyes yes, this one\'s the real letter. The handwritten one was just me being my usual dramatic self, trying to tease you. Consider that a trailer this is the full movie.' },
+    { type: 'body', text: 'You know, I honestly don\'t remember when exactly we started talking or what we first said to each other. It all began so casually just random reels, a "hi," a "hello," and a guy who didn\'t know how to start a normal conversation. But somehow, it worked. Somewhere between your replies and my weird timing, it turned into real conversations that actually mattered.' },
+    { type: 'body', text: 'And I don\'t say this lightly I really enjoy your presence. You\'ve got this calm, grounded energy that somehow balances out my chaos. You\'re one of the few people I can talk to without putting on a mask and I think that\'s rare. You\'ve seen me be serious, sarcastic, maybe even a little too dramatic, and yet you never made me feel out of place for it.' },
+    { type: 'body', text: 'Also, let me just say this if one fine day you decide to deactivate your Instagram and vanish, I\'m telling you now, I\'ll be genuinely sad. (And yes, I\'ll still pretend to be chill about it, but deep down I\'ll be sulking like a rejected cat.) So please, don\'t pull a "case dismissed" on me, okay?' },
+    { type: 'body', text: 'You\'ve become someone important to me not in some poetic or over-the-top way, but in a simple, genuine, "I\'d really miss talking to you" kind of way. And that\'s probably the best compliment I can give anyone.' },
+    { type: 'body', text: 'So, here\'s to you, Akhya — may your year ahead be filled with laughter, peace, and maybe fewer reasons to shout "Objection!" in real life.' },
+    { type: 'body', text: 'Happy Birthday, Akhya. ⚖️' },
+    { type: 'closing', text: 'Court adjourned (for now).' },
+    { type: 'signature', text: '— Yours,\n(The same guy who clearly enjoys overthinking his messages)' },
   ];
 
   useEffect(() => {
